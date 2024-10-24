@@ -1,10 +1,11 @@
 import { Plugin } from 'obsidian';
-import { MyPluginSettings, DEFAULT_SETTINGS, SampleSettingTab } from './src/settings';
+import { SynapticRouteSettings, DEFAULT_SETTINGS, SampleSettingTab } from './src/settings/settingTab';
+import { registerCommands } from './src/commands';
 
 // Remember to rename these classes and interfaces!
 
-export default class MyPlugin extends Plugin {
-	settings: MyPluginSettings;
+export default class SynapticRoute extends Plugin {
+	settings: SynapticRouteSettings;
 
 	async onload() {
 		await this.loadSettings();
@@ -12,7 +13,8 @@ export default class MyPlugin extends Plugin {
 		// 설정 탭 추가
 		this.addSettingTab(new SampleSettingTab(this.app, this));
 		
-		// 여기에 플러그인 기능을 추가하세요
+		// 명령어 등록
+		registerCommands(this);
 	}
 
 	onunload() {

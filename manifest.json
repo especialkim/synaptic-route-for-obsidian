@@ -1,9 +1,9 @@
 {
-	"id": "obsidian-plugin-template",
-	"name": "Obsidian Plugin Template",
+	"id": "synaptic-route-for-obsidian",
+	"name": "Synaptic Route for Obsidian",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "A template for Obsidian plugins Edited by Lucy.",
+	"description": "A plugin for Obsidian to manage routes.",
 	"author": "Lucy",
 	"authorUrl": "https://x.com/Facilitate4U",
 	"fundingUrl": "https://x.com/Facilitate4U",

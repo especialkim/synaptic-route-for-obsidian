@@ -1,18 +1,18 @@
 import { App, PluginSettingTab } from 'obsidian';
-import MyPlugin from '../main';
+import SynapticRoute from '../../main';
 
-export interface MyPluginSettings {
+export interface SynapticRouteSettings {
     mySetting: string;
 }
 
-export const DEFAULT_SETTINGS: MyPluginSettings = {
+export const DEFAULT_SETTINGS: SynapticRouteSettings = {
     mySetting: 'default'
 }
 
 export class SampleSettingTab extends PluginSettingTab {
-    plugin: MyPlugin;
+    plugin: SynapticRoute;
 
-    constructor(app: App, plugin: MyPlugin) {
+    constructor(app: App, plugin: SynapticRoute) {
         super(app, plugin);
         this.plugin = plugin;
     }
