@@ -13,12 +13,12 @@ This is just the beginning—new capabilities will continuously evolve to enhanc
 ### Features
 
 1. **Open with**
-    - Open with Cursor
+    - **Cursor**
         - Open current file in Cursor
         - Open parent folder in Cursor
             - Supports multiple folder selection when opening parent folders
         - Open vault in Cursor
-    - Open with CleanShotX
+    - **CleanShotX**
         - Open images with CleanShotX
 
 2. **What's Next?**
