@@ -1,6 +1,7 @@
-import { Plugin } from 'obsidian';
+import { Menu, Notice, Plugin } from 'obsidian';
 import { SynapticRouteSettings, DEFAULT_SETTINGS, SampleSettingTab } from './src/settings/settingTab';
 import { registerCommands } from './src/commands';
+import { registerEvents } from './src/events';
 
 // Remember to rename these classes and interfaces!
 
@@ -15,10 +16,14 @@ export default class SynapticRoute extends Plugin {
 		
 		// 명령어 등록
 		registerCommands(this);
+
+		// 이벤트 등록
+		registerEvents(this);
 	}
 
 	onunload() {
-		// 플러그인 언로드 시 정리 작업
+		// 등록된 모든 이벤트 정리
+		this.app.workspace.trigger('unload');
 	}
 
 	async loadSettings() {
