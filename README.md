@@ -22,7 +22,7 @@ A plugin for Obsidian that enhances your knowledge management workflow.
 1. Install the [BRAT](https://obsidian.md/plugins?id=obsidian42-brat) plugin in Obsidian
 2. Add this repository to BRAT
 
-> `https://github.com/especialkim/synaptic-route-for-obsidian.git`
+`https://github.com/especialkim/synaptic-route-for-obsidian.git`
 
 ### Option 2: Manual Installation
 1. Download the latest release
