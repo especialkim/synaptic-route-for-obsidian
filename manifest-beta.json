@@ -1,7 +1,7 @@
 {
 	"id": "synaptic-route-for-obsidian",
 	"name": "Synaptic Route for Obsidian - Open With CursorAI, CleanShotX",
-	"version": "0.1.0",
+	"version": "0.1.0-beta",
 	"minAppVersion": "0.15.0",
 	"description": "A plugin for Obsidian to manage routes.",
 	"author": "Lucy",
